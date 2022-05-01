@@ -1,0 +1,20 @@
+{
+  "name": "code-style",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Paul's Code Style Handbook",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "author": "Dreamer-Paul",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.33"
+  },
+  "devDependencies": {
+    "vitepress": "^0.22.3"
+  }
+}
