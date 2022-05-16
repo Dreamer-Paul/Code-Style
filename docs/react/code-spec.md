@@ -2,6 +2,96 @@
 
 JavaScript / TypeScript 写法，和本指南中 JavaScript 中的部分基本吻合。这里主要说下 React JSX 语法下的一些规范。
 
+## 引入模块
+
+使用 `import` 引入模块将根据其类型和作用进行分类，还根据其来源（框架，外部包，项目内引用）来编写。
+
+引用模块的类型，保罗是这样进行分类的：
+
+- 框架引用（例如 React）
+- 样式和 UI 组件引用（例如 Ant Design）
+- 工具类库引用（例如 Lodash 或者是自己封装的工具函数）
+- TypeScript 类型引用和适用于该文件内函数/组件的类型定义
+- 组件函数本体
+
+```tsx
+// React
+import React, { useRef } from "react";
+import useRequest from "@/hooks/useRequest";
+
+
+// UI
+import styles from "./DatePicker.module.less";
+
+import { Card, Button } from "antd";
+
+
+// Tool
+import { isLogined, parseJWTData } from "@/utils/tool";
+
+
+// Interface
+import { FC } from "react";
+import { IUserInfo } from "@/types/user";
+
+interface UserCardProps {
+  user: IUserInfo
+}
+
+
+// Component
+const UserCard: FC<UserCardProps> = (props) => {
+  ...
+}
+```
+
+来源的引入顺序是：外部包、项目内部模块，例如这段代码，React 作为外部包，其优先级在前。
+
+```tsx
+// React
+import React, { useRef } from "react";
+import useRequest from "@/hooks/useRequest";
+```
+
+## 导出模块
+
+一个文件导出一个模块（例如 React 的单个组件），默认使用 `export default {name}` 形式。
+
+```tsx
+// Component
+const UserCard: FC<UserCardProps> = (props) => {
+  ...
+}
+
+export default UserCard;
+```
+
+一个文件导出多个模块，使用 `export const {name}`（推荐）或 `export { name, name }` 形式。
+
+```ts
+export const isLogined = () => {
+  ...
+}
+
+export const parseJWTData = () => {
+  ...
+}
+```
+
+或者是
+
+```ts
+const isLogined = () => {
+  ...
+}
+
+const parseJWTData = () => {
+  ...
+}
+
+export { isLogined, parseJWTData };
+```
+
 ## 组件参数和回调
 
 如果组件没有任何 `children`，你需要用 `/>` 形式进行结尾。就和 HTML 的 `input` `img` 等元素的写法 `<input type="text" />` 差不多。

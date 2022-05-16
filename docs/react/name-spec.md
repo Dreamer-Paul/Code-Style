@@ -14,6 +14,12 @@ const statusKey: Record<string, string> = {
 const statusMap: Record<string, string> = {
   "pass": { color: "green", text: "Passed" }
 };
+
+const typeMap: { label: string, value: number }[] = [
+  { label: "公开", value: 1 },
+  { label: "草稿", value: 2 },
+  { label: "私密", value: 3 }
+];
 ```
 
 ## 页面级功能函数
