@@ -55,6 +55,30 @@ if(when){
 
 ## 对象表示
 
+不需要修改的固定数据，使用 `const` 声明，需要修改的数据，使用 `let` 声明。
+
+```javascript
+// 固定的数据
+const statusKey = {
+  success: "Success",
+  pending: "Pending",
+  failed: "Failed"
+};
+
+// 需要修改的数据
+let submitData = {
+  id: 1,
+  name: "Paul's Blog",
+  desc: "Dreamer-Paul's Personal Blog"
+};
+
+...
+
+const onChange = (name) => {
+  submitData.name = name;
+}
+```
+
 只有一行数据的情况下，无需换行。
 
 ```javascript
@@ -69,7 +93,7 @@ const user = [
 ];
 ```
 
-类似场景，import 也是这样
+类似场景，`import` 引用模块也是这样，相同类型的引用放在一行，方便区分。
 
 ```javascript
 import { api, request } from "@/utils/api";

@@ -1,6 +1,6 @@
 # React 编码规范
 
-JavaScript / TypeScript 写法，和本指南中 JavaScript 中的部分基本吻合。这里主要说下 React JSX 语法下的一些规范。
+JavaScript / TypeScript 写法，和本指南中 JavaScript 中的部分基本吻合。这里主要说下 React JSX 语法下的一些规范。下文仅适用于 React 和类似用法（Preact / SolidJS）的框架。
 
 ## 引入模块
 
@@ -121,9 +121,19 @@ export { isLogined, parseJWTData };
 </Select>
 ```
 
-## 状态定义
+用更少的 `props` 做同样的事，数据类参数，可使用 `TypeScript` 限定类型，而不是拆分为多个参数传入组件。
 
-以下部分，仅适用于 React 和类似用法（Preact / SolidJS）的框架。
+```tsx
+// 👍 推荐的
+<UserCard data={user} onChange={updateUserRequest} />
+
+// 👎 不推荐的
+<UserCard name={user.name} avatar={user.avatar} email={user.avatar}
+  onChange={updateUserRequest}
+/>
+```
+
+## 状态定义
 
 ### 同类数据归类
 

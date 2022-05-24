@@ -22,7 +22,13 @@ export default defineConfig({
           { text: "JavaScript", link: "/javascript/name-spec", activeMatch: "^/javascript" },
           { text: "React JSX", link: "/react/name-spec", activeMatch: "^/react" }
         ]
-      }
+      },
+      {
+        text: "其他",
+        items: [
+          { text: "Git", link: "/git", activeMatch: "^/git" }
+        ]
+      },
     ],
     sidebar: {
       "/css/": getCSSSidebar(),
