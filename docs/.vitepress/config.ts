@@ -26,7 +26,8 @@ export default defineConfig({
       {
         text: "其他",
         items: [
-          { text: "Git", link: "/git", activeMatch: "^/git" }
+          { text: "Git 管理", link: "/git", activeMatch: "^/git" },
+          { text: "项目目录结构", link: "/dir", activeMatch: "^/dir" }
         ]
       },
     ],
