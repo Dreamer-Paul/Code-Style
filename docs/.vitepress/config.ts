@@ -13,7 +13,7 @@ export default defineConfig({
         text: "外观",
         items: [
           { text: "CSS", link: "/css/format", activeMatch: "^/css" },
-          { text: "Less", link: "/less/format", activeMatch: "^/less" }
+          { text: "Less", link: "/less/code-spec", activeMatch: "^/less" }
         ]
       },
       {
@@ -33,6 +33,7 @@ export default defineConfig({
     ],
     sidebar: {
       "/css/": getCSSSidebar(),
+      "/less": getLessSidebar(),
       "/javascript": getJSSidebar(),
       "/react": getReactSidebar(),
     }
@@ -46,6 +47,17 @@ function getCSSSidebar() {
       children: [
         { text: "编码格式", link: "/css/format" },
         { text: "编码规范", link: "/css/code-spec" },
+      ]
+    }
+  ]
+}
+
+function getLessSidebar() {
+  return [
+    {
+      text: "Less",
+      children: [
+        { text: "编码规范", link: "/less/code-spec" },
       ]
     }
   ]

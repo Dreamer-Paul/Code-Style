@@ -53,6 +53,32 @@ import React, { useRef } from "react";
 import useRequest from "@/hooks/useRequest";
 ```
 
+### 引入样式
+
+如果是全局样式，可在入口文件（一般为 `app.tsx` 或 `main.tsx`）里直接使用 `import` 进行导入，而无需设置任何名称。
+
+```tsx
+import "./global.css";
+```
+
+如果是局部样式，保罗推荐使用 **CSS Modules** 形式引入样式，再结合 Less/Sass 等预编译器的**嵌套**编写方式，可在**简化类选择器命名**的同时，**不干扰**任何采用相同命名的其他组件。关于 Less 的书写规范，可以查阅本文档的对应页面。
+
+```tsx
+// 👍 推荐的
+import styles from "./DatePicker.module.less";
+
+<div className={styles.picker}>
+  ...
+</div>
+
+// 👎 不推荐的
+import "./DatePicker.module.less";
+
+<div className="paul-date-picker">
+  ...
+</div>
+```
+
 ## 导出模块
 
 一个文件导出一个模块（例如 React 的单个组件），默认使用 `export default {name}` 形式。
