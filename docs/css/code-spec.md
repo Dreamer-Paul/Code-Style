@@ -30,15 +30,18 @@
 
 CSS 的部分属性是会自动从父元素中继承的，你应当充分利用它，以减少重复编写的样式属性。
 
-```css
-/* <ul class="project-list">
+
+```html
+<ul class="project-list">
   <li><a href="style">奇趣框架</a></li>
   <li><a href="player">奇趣播放器</a></li>
   <li><a href="tools">奇趣小工具</a></li>
   <li><a href="single">Single 主题</a></li>
   <li><a href="fantasy">Fantasy 主题</a></li>
-</ul> */
+</ul>
+```
 
+```css
 /* 👍 推荐的，继承了属性特性 */
 .project-list{
   color: #555;
@@ -123,10 +126,13 @@ img, svg, audio, video, iframe{
 
 如果想要限制一个元素的高度，不妨可以使用 `padding` 和 `line-height` 撑起来，而不是编写一个固定的 `height` 值。如果使用固定的 `height` 值，随着屏幕宽度的缩小，如果内容被换行，将会呈现出错误的效果。
 
-```css
-/* <h2>I am a testing page</h2>
-<a class="btn">Click me, goddess!</a> */
 
+```html
+<h2>I am a testing page</h2>
+<a class="btn">Click me, goddess!</a>
+```
+
+```css
 /* 👍 推荐的，简练直观 */
 .btn{
   padding: .75em 1em;
@@ -154,20 +160,49 @@ body{
 /* 未来还会再度补充 */
 ```
 
-## 避免使用 float 来编写栅格布局
+## 不要滥用 Flex 布局
+
+如果需要将多个子元素进行横向居中展示，那么你只需要使用 `text-align: center` 即可快速完成，而且能确保移动端上文字换行后是居中对齐，而不是靠左对齐。
+
+
+```html
+<div class="notice-message">
+  <h2>错误标题</h2>
+  <p>哎呀，服务端出现了点问题，请稍后重试！</p>
+</div>
+```
+
+```css
+/* 👍 推荐的，简练直观 */
+.notice-message{
+  text-align: center;
+}
+
+/* 👎 不推荐的，使用 Flex 布局，性能变差，代码量大 */
+.notice-message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+```
+
+## 避免使用 Float 来编写栅格布局
 
 现在已经是 2202 年了，使用 `float` 来布局会产生很多奇奇怪怪的对齐问题，且不利于响应式页面的设计，你应当使用 `FlexBox` 或 `Grid` 系统来进行替代。
 
-```css
-/* <div class="row">
+```html
+<div class="row">
   <div class="column">
     <p>Column A</p>
   </div>
   <div class="column">
     <p>Column B</p>
   </div>
-</div> */
+</div>
+```
 
+```css
 /* 👍 推荐的 */
 .row{
   display: flex;
@@ -205,9 +240,13 @@ body{
 
 `z-index` 属性如果没有特殊情况，也不应该设置太大的值，即便它应该固定在页面顶部，看似需要极高的优先级。
 
-```css
-/* <header class="header"></header> */
+```html
+<header class="header">
+  ...
+</header>
+```
 
+```css
 /* 👍 推荐的 */
 .header{
   top: 0;
