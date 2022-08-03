@@ -47,14 +47,36 @@
 
 ### components
 
-存放通用、页面内业务和容器组件的文件夹，一个页面或业务功能建立一个文件夹（参考 `pages` 的实际存放结构），里面依旧是一个组件一个文件夹，以下两种组件文件夹基本上每个项目都固定存在。
-
-保罗项目的示例：
+存放通用、页面内业务和容器组件的文件夹，一个页面或业务功能建立一个文件夹（参考 `pages` 的实际存放结构），里面依旧是一个组件一个文件夹（如果组件仅使用全局样式可直接存放，以 `组件名.tsx` 形式，考虑到后期扩展建议还是创建文件夹），以下两种组件文件夹基本上每个项目都固定存在。
 
 - base
   - 通用组件（Button / Modal / InputCopy 等）
 - layouts
   - 存放各种布局组件（Header / Aside / Footer 等）
+
+保罗项目的示例：
+
+- base
+  - Button
+    - index.tsx
+    - Button.module.less
+  - Drawer
+    - index.tsx
+    - Drawer.module.less
+- layouts
+  - Header
+    - index.tsx
+    - Header.module.less
+  - Aside
+    - index.tsx
+    - Aside.module.less
+- note
+  - MediaDrawer
+    - index.tsx
+    - MediaDrawer.module.less
+  - BtnPlayer
+    - index.tsx
+    - BtnPlayer.module.less
 
 ### hooks
 
@@ -174,7 +196,7 @@
 
 ### pages
 
-同页面组件，不过每个页面必须是一个文件夹，一个路由指向一个文件夹，在这里没有进行文件夹嵌套存储，而是根据实际展示应用进行文件夹的命名。
+同页面组件，不过每个页面必须是一个文件夹，一个路由指向一个文件夹，在这里没有根据业务类型进行文件夹嵌套存储，而是根据实际展示应用进行文件夹的命名。
 
 - note-list
 - note-detail
