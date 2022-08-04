@@ -85,6 +85,37 @@
 
 关于图片优化的详情也可参考我的文章：[谈谈 Web 图片浏览体验与优化](https://paugram.com/essay/talking-web-images.html)
 
+#### SVG 图标
+
+可以直接作为一个 ReactElement 存在一个 `.tsx` 文件夹内，将多个图标进行导出，或者使用打包器提取指定目录下的所有 SVG 文件，作为页面全局的一部分，再使用 SVG 的 `use` 标签引用，这种方式也支持使用 `color: currentColor` 进行自定义填色。
+
+```html
+<!-- 定义 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:link="http://www.w3.org/1999/xlink">
+  <symbol fill="none" viewBox="0 0 14 16" id="icon-security-fill">
+    <path d="..." stroke="currentColor"></path>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="..." fill="currentColor"></path>
+  </symbol>
+</svg>
+
+<!-- 使用 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:link="http://www.w3.org/1999/xlink">
+  <use href="#icon-security-fill"></use>
+</svg>
+```
+
+#### SVG 插画
+
+就是最纯粹的引入就行了，不玩任何套路。记得存放前走一波压缩工具！
+
+```tsx
+import homeIllust from "@/images/home/HomeIllust.svg";
+
+...
+
+<img src={homeIllust} alt="Home Illust" />
+```
+
 ## 参考文章
 
 本文档的部分规范，借鉴了他人经验，感谢他们为我提供了帮助。
