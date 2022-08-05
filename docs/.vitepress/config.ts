@@ -46,7 +46,7 @@ function getCSSSidebar() {
       text: "CSS",
       children: [
         { text: "编码格式", link: "/css/format" },
-        { text: "编码规范", link: "/css/code-spec" },
+        { text: "编码实践", link: "/css/practice" },
       ]
     }
   ]
