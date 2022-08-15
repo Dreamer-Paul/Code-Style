@@ -1,6 +1,6 @@
 # 前言
 
-这是一篇由保罗自己写代码总结出来的属于自己的代码风格，在一度「借鉴」了不少类似的文章中，又给出了自己的观点。
+这是一篇由保罗自己写代码总结出来的属于自己的“代码风格与实践”手册，在一度「借鉴」了不少类似项目规范的文章中，又给出了自己的观点。
 
 本手册主要列举了 HTML、CSS、JavaScript、React JSX 和 Git Commit 的规范，如果你觉得有点意思，不妨可以继续往下看。
 
@@ -131,7 +131,13 @@ interface IModifiedDetail extends IDetail {
 - 矢量图（svg）一般用于图标或插画
 - 位图（jpg / png）一般用于背景，插图
 
+#### 矢量图资源的处理
+
 矢量图可以使用 [张鑫旭的压缩工具](https://www.zhangxinxu.com/sp/svgo) 压缩一波，然后再插入到项目里面，确保没有冗余代码（空格换行，无效属性和注释字符等）的同时减少存储占用，提高访问效率。
+
+如果是用于图标的矢量图，单色图标可直接使用 `currentColor` 这样的 CSS 属性应用颜色，而不是单独维护多个颜色的图标文件，在 SVG 代码中一般将它设置在 `stroke` 和 `fill` 属性上。
+
+#### 位图资源的处理
 
 需要透明度的图片才使用 `png` 格式，否则都默认采用 `jpg` 格式，`png` 本身的格式特性会比 `jpg` 占用更大的空间。
 
@@ -141,7 +147,7 @@ interface IModifiedDetail extends IDetail {
 
 关于图片优化的详情也可参考我的文章：[谈谈 Web 图片浏览体验与优化](https://paugram.com/essay/talking-web-images.html)
 
-#### SVG 图标
+#### SVG 图标的引入
 
 可以直接作为一个 ReactElement 存在一个 `.tsx` 文件夹内，将多个图标进行导出，或者使用打包器提取指定目录下的所有 SVG 文件，作为页面全局的一部分，再使用 SVG 的 `use` 标签引用，这种方式也支持使用 `color: currentColor` 进行自定义填色。
 
@@ -160,7 +166,7 @@ interface IModifiedDetail extends IDetail {
 </svg>
 ```
 
-#### SVG 插画
+#### SVG 插画的引入
 
 就是最纯粹的引入就行了，不玩任何套路。记得存放前走一波压缩工具！
 
