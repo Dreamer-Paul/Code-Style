@@ -26,6 +26,7 @@ export default defineConfig({
       {
         text: "其他",
         items: [
+          { text: "系统环境", link: "/env", activeMatch: "^/env" },
           { text: "Git 管理", link: "/git", activeMatch: "^/git" },
           { text: "项目目录结构", link: "/dir", activeMatch: "^/dir" }
         ]
