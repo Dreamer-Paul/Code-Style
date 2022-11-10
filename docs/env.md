@@ -17,11 +17,19 @@
   - 除了 Windows 版都是比较良心的无广告软件，相较于 Office 全家桶它的占用还是比较小的
 - [KDE Connect](https://kdeconnect.kde.org)：跨平台连接工具，可传输文件、剪贴板、远程操控等功能
 
+### 命令行软件
+
+- [Cloc](https://github.com/AlDanial/cloc)：统计代码行数
+  - @Innei 提供的快速使用命令：`cloc . --exclude-dir=node_modules,.nuxt,.next,build,.vscode,dist,release,tmp --exclude-lang=JSON,SVG,XML`
+- ffmpeg：几乎万能的开源媒体格式转换工具
+
 ## Windows
 
 ### 运行环境
 
 - [NVM Windows](https://github.com/coreybutler/nvm-windows) + NodeJS 套装
+- [Xampp](https://www.apachefriends.org/download.html)：PHP 集成环境
+  - Apache + MariaDB + PHP + Perl
 
 ### 软件
 
@@ -29,7 +37,12 @@
 - [TortoiseGit](https://tortoisegit.org)
 - [TortoiseSVN](https://tortoisesvn.net)
 - Clash For Windows
-- [PowerToys](https://github.com/microsoft/PowerToys)：系统辅助工具，内置颜色选择、窗口布局、文件管理器功能拓展等
+- [PowerToys](https://github.com/microsoft/PowerToys)：如其名曰，是一款系统辅助工具
+  - 内置颜色选择、窗口布局、文件管理器功能拓展等
+
+### 命令行软件
+
+- [tcping](https://elifulkerson.com/projects/tcping.php)：模拟 TCP 连接检测工具
 
 ### 终端
 
@@ -57,10 +70,11 @@
 - V2RayU
 - ClashX
 - [IINA](https://iina.io)：Mac 独占的播放器，媲美 QuickTime 的界面，更强的解码
-- Microsoft Remove Desktop：Windows 远程桌面工具（可惜 Linux 没有）
+- [Microsoft Remove Desktop Beta](https://aka.ms/rdmacbeta)：Windows 远程桌面工具（可惜 Linux 没有）
 - CleanMyMac X：Mac 系统维护和清理软件（也有 Windows 的）
-- iStat Menus：Mac 独占的付费系统监控软件（我嫖 @Innei 的）
+- [iStat Menus](https://bjango.com/mac/istatmenus)：Mac 独占的付费系统监控软件（我嫖 @Innei 的）
 - [MacZip](https://ezip.awehunt.com)：Mac 独占的压缩软件，重点是免费
+- Reeder：RSS 阅读软件，目前我用的是商店里绝版的 V4 版本，曾经限免获取的
 
 ### 终端
 
