@@ -119,3 +119,38 @@ Deepin 的 Vim 默认开启了可视化块选复制功能（Visual 模式），�
 ```
 :set mouse-=a
 ```
+
+## 硬件配置
+
+### Windows
+
+Tower PC - Tinari
+
+- Intel i5 12400
+- 32G RAM
+- 1T SSD
+- RX6750 XT
+
+
+Tower PC (Office)
+
+- Intel i5 9400
+- 16G RAM
+- 256G SSD + 1T HDD
+- Intel HD Graphics
+
+### MacOS
+
+MacBook Pro 2020 - Nahida
+
+- Intel i7 1068NG7
+- 16G RAM
+- 512G SSD
+- Intel HD Graphics
+
+Mac Mini 2020 (Office)
+
+- Apple M1
+- 8G RAM
+- 256G SSD
+- Apple M1 GPU
