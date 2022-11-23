@@ -37,6 +37,8 @@
 - [TortoiseGit](https://tortoisegit.org)
 - [TortoiseSVN](https://tortoisesvn.net)
 - Clash For Windows
+- [DevToys](https://github.com/veler/DevToys)：开发者工具
+  - 内置时间戳转换、代码格式化、生成 MD5、Markdown 预览、JWT 解析、图片转换等
 - [PowerToys](https://github.com/microsoft/PowerToys)：如其名曰，是一款系统辅助工具
   - 内置颜色选择、窗口布局、文件管理器功能拓展等
 
@@ -57,6 +59,7 @@
 ### 包管理工具
 
 - [HomeBrew](https://brew.sh)：Mac 包管理器（万物起源）
+  - 使用 API 而不是 Git 仓库安装内容：`export HOMEBREW_INSTALL_FROM_API=1`
 
 ### 运行环境
 
@@ -69,6 +72,7 @@
 - [SourceTree](https://www.atlassian.com/software/sourcetree)
 - V2RayU
 - ClashX
+- [DevToys](https://github.com/ObuchiYuki/DevToysMac)：DevToys 的 Mac 版本
 - [IINA](https://iina.io)：Mac 独占的播放器，媲美 QuickTime 的界面，更强的解码
 - [Microsoft Remove Desktop Beta](https://aka.ms/rdmacbeta)：Windows 远程桌面工具（可惜 Linux 没有）
 - CleanMyMac X：Mac 系统维护和清理软件（也有 Windows 的）
@@ -127,9 +131,12 @@ Deepin 的 Vim 默认开启了可视化块选复制功能（Visual 模式），�
 Tower PC - Tinari
 
 - Intel i5 12400
+  - [CPU 性能跑分](https://browser.geekbench.com/v5/cpu/17521279)
+  - [集显性能跑分](https://browser.geekbench.com/v5/compute/5556253)
 - 32G RAM
 - 1T SSD
 - RX6750 XT
+  - [GPU 性能跑分](https://browser.geekbench.com/v5/compute/5596836)
 
 
 Tower PC (Office)
@@ -151,6 +158,7 @@ MacBook Pro 2020 - Nahida
 Mac Mini 2020 (Office)
 
 - Apple M1
+  - [性能跑分](https://browser.geekbench.com/v5/cpu/18628524)
+  - [集显性能跑分](https://browser.geekbench.com/v5/compute/5884837)
 - 8G RAM
 - 256G SSD
-- Apple M1 GPU
