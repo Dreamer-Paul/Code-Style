@@ -31,7 +31,6 @@ import { isLogined, parseJWTData } from "@/utils/tool";
 
 
 // Interface
-import { FC } from "react";
 import { IUserInfo } from "@/types/user";
 
 interface UserCardProps {
@@ -40,8 +39,8 @@ interface UserCardProps {
 
 
 // Component
-const UserCard: FC<UserCardProps> = (props) => {
-  ...
+function UserCard(props) => {
+  // ...
 }
 ```
 
@@ -85,7 +84,7 @@ import "./DatePicker.module.less";
 
 ```tsx
 // Component
-const UserCard: FC<UserCardProps> = (props) => {
+function UserCard(props) => {
   ...
 }
 

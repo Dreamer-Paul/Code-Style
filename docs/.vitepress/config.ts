@@ -13,7 +13,7 @@ export default defineConfig({
         text: "外观",
         items: [
           { text: "CSS", link: "/css/format", activeMatch: "^/css" },
-          { text: "Less", link: "/less/code-spec", activeMatch: "^/less" }
+          { text: "Less", link: "/less/practice", activeMatch: "^/less" }
         ]
       },
       {
@@ -58,7 +58,7 @@ function getLessSidebar() {
     {
       text: "Less",
       children: [
-        { text: "编码规范", link: "/less/code-spec" },
+        { text: "编码实践", link: "/less/practice" },
       ]
     }
   ]

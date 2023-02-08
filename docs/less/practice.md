@@ -1,8 +1,10 @@
-# Less 编码规范
+# Less 编码实践
+
+Less 生成的结果还是 CSS，因此有关 CSS 的使用实践不在这里过多展开。
 
 > 保罗使用 Less 的最主要原因是它的语法比 Sass 要简单一些，但最核心的其实还是 CSS 的嵌套功能。在 CSS 普及原生实现之前，预编译器依旧是主流的方案。
 
-## 选择器命名
+## 使用简短的选择器命名
 
 如果你在使用 ViteJS 或 WebPack 等打包方式编写 Less，并结合 CSS Modules 的方式进行样式引用，那么实装上去就会有一个随机生成的后缀。
 
@@ -24,29 +26,29 @@
 
 ```less
 // Less
-.drawer{
-  ...
+.drawer {
+  // ...
 
-  &.active{
-    ...
+  &.active {
+    // ...
   }
 
-  .header, .footer{
-    ...
+  .header, .footer {
+    // ...
   }
 
-  .header{
-    .close{
-      ...
+  .header {
+    .close {
+      // ...
     }
   }
 
-  .footer{
-    ...
+  .footer {
+    // ...
   }
 
-  .body{
-    ...
+  .body {
+    // ...
   }
 }
 ```

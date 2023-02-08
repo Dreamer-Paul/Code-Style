@@ -43,24 +43,24 @@ CSS 的部分属性是会自动从父元素中继承的，你应当充分利用�
 
 ```css
 /* 👍 推荐的，继承了属性特性 */
-.project-list{
+.project-list {
   color: #555;
   padding-left: 0;
   list-style: none;
 }
 
-.project-list a{ color: inherit }
+.project-list a { color: inherit }
 
 /* 👎 不推荐的，分别指定了属性，未继承属性特性 */
-.project-list{
+.project-list {
   padding-left: 0;
 }
-.project-list li{
+.project-list li {
   color: #555;
   list-style: none;
 }
 
-.project-list a{ color: #555 }
+.project-list a { color: #555 }
 ```
 
 `ul` 元素去掉小点点只需要选择父元素就行，颜色也应该复用默认颜色，而不是重新写死一条固定颜色。
@@ -102,13 +102,13 @@ CSS 的部分属性是会自动从父元素中继承的，你应当充分利用�
 
 ```css
 /* 👍 推荐的，手机上自动缩小到适合的宽度 */
-.modal{
+.modal {
   width: 60em;
   max-width: 90%;
 }
 
 /* 👎 不推荐的，手机上也会以 60 个字符展示，导致内容显示不全 */
-.modal{
+.modal {
   width: 60em;
 }
 ```
@@ -116,7 +116,7 @@ CSS 的部分属性是会自动从父元素中继承的，你应当充分利用�
 还有一个很常用的重制样式，可以让图片等媒体元素自适应到网页最大宽度，也是利用了这个原理。
 
 ```css
-img, svg, audio, video, iframe{
+img, svg, audio, video, iframe {
   max-width: 100%;
   vertical-align: middle;
 }
@@ -134,12 +134,12 @@ img, svg, audio, video, iframe{
 
 ```css
 /* 👍 推荐的，简练直观 */
-.btn{
+.btn {
   padding: .75em 1em;
 }
 
 /* 👎 不推荐的，用高度撑开元素，且内间距设置混乱 */
-.btn{
+.btn {
   height: 18px;
   padding-top: 5px;
   padding-left: 5px;
@@ -152,7 +152,7 @@ img, svg, audio, video, iframe{
 
 ```css
 /* 👎 不推荐的 */
-body{
+body {
   /* 这条属性可能会影响子元素滚动条的行为 */
   overflow: hidden;
 }
@@ -174,12 +174,12 @@ body{
 
 ```css
 /* 👍 推荐的，简练直观 */
-.notice-message{
+.notice-message {
   text-align: center;
 }
 
 /* 👎 不推荐的，使用 Flex 布局，性能变差，代码量大 */
-.notice-message{
+.notice-message {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,32 +204,32 @@ body{
 
 ```css
 /* 👍 推荐的 */
-.row{
+.row {
   display: flex;
   row-gap: 1em;
 }
 
-.row .column{
+.row .column {
   flex: 0 0 50%;
   max-width: 50%;
   padding: 0 .5em;
 }
 
 /* 👍 推荐的 */
-.row{
+.row {
   display: grid;
   gap: 1em;
   grid-template-columns: 1fr 1fr;
 }
 
 /* 👎 不推荐的 */
-.row::after{
+.row::after {
   clear: both;
   content: "";
   display: block;
 }
 
-.row .column{
+.row .column {
   width: 50%;
   float: left;
   padding: 0 .5em;
@@ -248,7 +248,7 @@ body{
 
 ```css
 /* 👍 推荐的 */
-.header{
+.header {
   top: 0;
   left: 0;
   right: 0;
@@ -257,7 +257,7 @@ body{
 }
 
 /* 👎 不推荐的 */
-.header{
+.header {
   top: 0;
   left: 0;
   right: 0;
@@ -281,7 +281,7 @@ transition-duration: .3s;
 
 ```css
 /* 👍 推荐的，简练直观 */
-background: url("bg.jpg") #555 center/cover no-repeat;
+background: url(bg.jpg) #555 center/cover no-repeat;
 
 /* 👎 不推荐的 */
 background-color: #555;
@@ -294,18 +294,18 @@ background-position: center;
 
 ```css
 /* 👍 推荐的，复用默认属性 */
-body{
+body {
   background: url(img/background.png) top center fixed;
 }
-body.neon{
+body.neon {
   background-image: url(img/background-neon.png);
 }
 
 /* 👎 不推荐的，未复用默认属性 */
-body{
+body {
   background: url(img/background.png) top center fixed;
 }
-body.neon{
+body.neon {
   background: url(img/background-neon.png) top center fixed;
 }
 ```
@@ -316,35 +316,35 @@ body.neon{
 
 ```css
 /* 👍 推荐的，格式统一 */
-:root{
+:root {
   --primary: #009688;
   --secondly: #2ecc71;
 }
 
-body{
+body {
   color: #333;
 }
 
-.sidebar nav a{
+.sidebar nav a {
   color: rgba(255, 255, 255, .9);
 }
 
 /* 👎 不推荐的，格式混乱 */
-:root{
+:root {
   --primary: rgb(46, 204, 113);
   --secondly: hsl(145deg, 63%, 49%);
 }
 
-body{
+body {
   color: #333333;
 }
 
-.sidebar nav a{
+.sidebar nav a {
   color: #ffffffe6;
 }
 ```
 
-## 图片元素
+## 图片元素保持正比显示
 
 大多数情况下，你应当确保图片能保持正确的比例显示，除了使用 `background` 容器外，你还可以使用 `object-fit` 属性解决这个问题。
 
@@ -352,21 +352,21 @@ body{
 /* 原图为 1024x768px，而你需要展示成一个 1:1 的效果 */
 
 /* 👍 推荐的，使用 object-fit 更正比例 */
-.note-image img{
+.note-image img {
   width: 5em;
   height: 5em;
   object-fit: cover;
 }
 
 /* 👍 推荐的，使用背景填充 */
-.note-image img{
+.note-image img {
   width: 5em;
   height: 5em;
   background: url("bg.jpg") center/cover no-repeat;
 }
 
 /* 👎 不推荐的，图片实际展示会变形 */
-.note-image img{
+.note-image img {
   width: 5em;
   height: 5em;
 }
