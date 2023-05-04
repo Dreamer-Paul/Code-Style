@@ -21,7 +21,9 @@
 
 - [Cloc](https://github.com/AlDanial/cloc)：统计代码行数
   - @Innei 提供的快速使用命令：`cloc . --exclude-dir=node_modules,.nuxt,.next,build,.vscode,dist,release,tmp --exclude-lang=JSON,SVG,XML`
-- ffmpeg：几乎万能的开源媒体格式转换工具
+- [FFmpeg](https://github.com/FFmpeg/FFmpeg)：几乎万能的开源媒体格式转换工具
+- [exiftool](https://github.com/exiftool/exiftool)：读取、写入照片不限于 EXIF 信息的工具
+- [ImageMagick](https://github.com/ImageMagick/ImageMagick)：图像处理工具，比 FFmpeg 要更专业
 
 ## Windows
 
@@ -68,7 +70,7 @@
 
 ### 软件
 
-- CotEditor：Mac 独占的一次性编辑器
+- [CotEditor](https://github.com/coteditor/CotEditor)：Mac 独占的一次性编辑器
 - [SourceTree](https://www.atlassian.com/software/sourcetree)
 - V2RayU
 - ClashX
@@ -155,7 +157,7 @@ MacBook Pro 2020 - Nahida
 - 512G SSD
 - Intel HD Graphics
 
-Mac Mini 2020 (Office)
+Mac Mini 2020 - Sayu (Office)
 
 - Apple M1
   - [性能跑分](https://browser.geekbench.com/v5/cpu/18628524)

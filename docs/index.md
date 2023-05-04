@@ -11,5 +11,5 @@ features:
     details: 目前包括了 HTML、CSS、Less、JavaScript、React、系统环境、Git 管理、目录结构等相关内容。
   - title: 参与维护
     details: 文档基于 VitePress 生成，使用 Markdown 语言编写。对本项目的内容有些许想法？欢迎在 Issues 区进行讨论交流。
-footer: © 2022 Dreamer-Paul.
+footer: © 2023 Dreamer-Paul.
 ---
