@@ -81,6 +81,8 @@
 - [iStat Menus](https://bjango.com/mac/istatmenus)：Mac 独占的付费系统监控软件（我嫖 @Innei 的）
 - [MacZip](https://ezip.awehunt.com)：Mac 独占的压缩软件，重点是免费
 - Reeder：RSS 阅读软件，目前我用的是商店里绝版的 V4 版本，曾经限免获取的
+- [Hammerspoon](https://www.hammerspoon.org)：多功能系统扩展应用，例如可以用它结合插件实现实现快捷键分屏
+  - [ShiftIt](https://github.com/peterklijn/hammerspoon-shiftit)：没错，就是这个插件，体验毫不逊色于付费软件
 
 ### 终端
 

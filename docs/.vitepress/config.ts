@@ -20,7 +20,7 @@ export default defineConfig({
         text: "脚本",
         items: [
           { text: "JavaScript", link: "/javascript/name-spec", activeMatch: "^/javascript" },
-          { text: "React JSX", link: "/react/name-spec", activeMatch: "^/react" }
+          { text: "React", link: "/react/name-spec", activeMatch: "^/react" }
         ]
       },
       {
@@ -84,6 +84,7 @@ function getReactSidebar() {
       children: [
         { text: "命名规范", link: "/react/name-spec" },
         { text: "编码规范", link: "/react/code-spec" },
+        { text: "编码实践", link: "/react/practice" },
       ]
     }
   ]

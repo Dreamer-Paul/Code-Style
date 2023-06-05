@@ -373,6 +373,7 @@ import homeIllust from "@/images/home/HomeIllust.svg";
 - 《[我是如何带领团队从零到一建立前端规范的](https://juejin.cn/post/7085257325165936648)》@不要秃头啊
 - 《[编写防御性 CSS 实践](https://zhuanlan.zhihu.com/p/456571205)》@KooFE
 - 《[MPAs vs. SPAs](https://docs.astro.build/zh-cn/concepts/mpa-vs-spa)》@Astro 文档
+- 《[React 应用中性能优化的经验（一）](https://innei.ren/posts/programming/experience-in-performance-optimization-in-react-applications-1)》@Innei
 
 ## 开源声明
 
