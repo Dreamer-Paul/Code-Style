@@ -1,3 +1,6 @@
+---
+outline: deep
+---
 
 # JS 编码规范
 

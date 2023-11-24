@@ -11,10 +11,7 @@
   },
   "author": "Dreamer-Paul",
   "license": "ISC",
-  "dependencies": {
-    "vue": "^3.2.33"
-  },
   "devDependencies": {
-    "vitepress": "^0.22.3"
+    "vitepress": "1.0.0-rc.30"
   }
 }

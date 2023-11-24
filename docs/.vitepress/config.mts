@@ -1,4 +1,4 @@
-import { defineConfig } from "vitepress";
+import { defineConfig, type DefaultTheme } from "vitepress";
 
 export default defineConfig({
   lang: "zh-CN",
@@ -6,7 +6,7 @@ export default defineConfig({
   description: "Paul's Coding Style Handbook",
 
   themeConfig: {
-    repo: "Dreamer-Paul/Code-Style",
+    logo: { src: "/logo.svg", width: 24, height: 24 },
     nav: [
       { text: "前言", link: "/intro", activeMatch: "^/intro" },
       {
@@ -37,15 +37,21 @@ export default defineConfig({
       "/less": getLessSidebar(),
       "/javascript": getJSSidebar(),
       "/react": getReactSidebar(),
-    }
+    },
+    socialLinks: [
+      { icon: "github", link: "https://github.com/Dreamer-Paul/Code-Style" }
+    ],
+    footer: {
+      copyright: "© 2023 Dreamer-Paul"
+    },
   }
 })
 
-function getCSSSidebar() {
+function getCSSSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "CSS",
-      children: [
+      items: [
         { text: "编码格式", link: "/css/format" },
         { text: "编码实践", link: "/css/practice" },
       ]
@@ -53,22 +59,22 @@ function getCSSSidebar() {
   ]
 }
 
-function getLessSidebar() {
+function getLessSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "Less",
-      children: [
+      items: [
         { text: "编码实践", link: "/less/practice" },
       ]
     }
   ]
 }
 
-function getJSSidebar() {
+function getJSSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "JavaScript",
-      children: [
+      items: [
         { text: "命名规范", link: "/javascript/name-spec" },
         { text: "编码格式", link: "/javascript/format" },
         { text: "编码规范", link: "/javascript/code-spec" },
@@ -77,11 +83,11 @@ function getJSSidebar() {
   ]
 }
 
-function getReactSidebar() {
+function getReactSidebar(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "React",
-      children: [
+      items: [
         { text: "命名规范", link: "/react/name-spec" },
         { text: "编码规范", link: "/react/code-spec" },
         { text: "编码实践", link: "/react/practice" },

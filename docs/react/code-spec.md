@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # React 编码规范
 
 JavaScript / TypeScript 写法，和本指南中 JavaScript 中的部分基本吻合。这里主要说下 React JSX 语法下的一些规范。下文仅适用于 React 和类似用法（Preact / SolidJS）的框架。

@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Git 管理
 
 ## Commit 记录

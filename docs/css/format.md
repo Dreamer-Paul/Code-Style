@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # CSS 编码格式
 
 > 这篇指南比较适合于传统 CSS，Sass / Less 等预编译器均可通用，如果你在使用 TailwindCSS / WindiCSS 这样的原子化 CSS 库，那你可以略过。

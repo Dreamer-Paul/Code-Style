@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # Less 编码实践
 
 Less 生成的结果还是 CSS，因此有关 CSS 的使用实践不在这里过多展开。

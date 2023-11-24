@@ -1,3 +1,7 @@
+---
+outline: deep
+---
+
 # React 编码实践
 
 ## 引入外部 SDK 库
