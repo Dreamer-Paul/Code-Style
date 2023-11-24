@@ -4,7 +4,7 @@ outline: deep
 
 # 系统环境
 
-## 通用
+## 跨平台
 
 ### 软件
 
@@ -20,6 +20,8 @@ outline: deep
 - [WPS Office](https://www.wps.cn)：国产办公软件
   - 除了 Windows 版都是比较良心的无广告软件，相较于 Office 全家桶它的占用还是比较小的
 - [KDE Connect](https://kdeconnect.kde.org)：跨平台连接工具，可传输文件、剪贴板、远程操控等功能
+- [OBS](https://obsproject.com)：跨平台且免费的直播软件，不多说
+- [Affinity Photo](https://affinity.serif.com)：跨平台的照片编辑软件，可购永久授权
 
 ### 命令行软件
 
@@ -47,6 +49,8 @@ outline: deep
   - 内置时间戳转换、代码格式化、生成 MD5、Markdown 预览、JWT 解析、图片转换等
 - [PowerToys](https://github.com/microsoft/PowerToys)：如其名曰，是一款系统辅助工具
   - 内置颜色选择、窗口布局、文件管理器功能拓展等
+- [WinSCP](https://winscp.net)：图形化 SCP 工具，比 SFTP 协议的要好用一些？
+- [XShell](https://www.xshell.com/zh/xshell)：一款老牌的 SSH 工具，个人授权免费
 
 ### 命令行软件
 
@@ -65,7 +69,6 @@ outline: deep
 ### 包管理工具
 
 - [HomeBrew](https://brew.sh)：Mac 包管理器（万物起源）
-  - 使用 API 而不是 Git 仓库安装内容：`export HOMEBREW_INSTALL_FROM_API=1`
 
 ### 运行环境
 
@@ -75,9 +78,9 @@ outline: deep
 ### 软件
 
 - [CotEditor](https://github.com/coteditor/CotEditor)：Mac 独占的一次性编辑器
-- [SourceTree](https://www.atlassian.com/software/sourcetree)
-- V2RayU
-- ClashX
+- [SourceTree](https://www.atlassian.com/software/sourcetree)：免费的 Git 可视化管理工具
+- V2RayU：懂得都懂
+- ClashX Pro：懂得都懂
 - [DevToys](https://github.com/ObuchiYuki/DevToysMac)：DevToys 的 Mac 版本
 - [IINA](https://iina.io)：Mac 独占的播放器，媲美 QuickTime 的界面，更强的解码
 - [Microsoft Remove Desktop Beta](https://aka.ms/rdmacbeta)：Windows 远程桌面工具（可惜 Linux 没有）
@@ -87,6 +90,8 @@ outline: deep
 - Reeder：RSS 阅读软件，目前我用的是商店里绝版的 V4 版本，曾经限免获取的
 - [Hammerspoon](https://www.hammerspoon.org)：多功能系统扩展应用，例如可以用它结合插件实现实现快捷键分屏
   - [ShiftIt](https://github.com/peterklijn/hammerspoon-shiftit)：没错，就是这个插件，体验毫不逊色于付费软件
+- [Android File Transfer](https://www.android.com/filetransfer)：在 Mac 上管理安卓手机文件
+- [Macs Fan Control](https://crystalidea.com/macs-fan-control)：风扇转速控制软件，免费版够用
 
 ### 终端
 
@@ -131,42 +136,3 @@ Deepin 的 Vim 默认开启了可视化块选复制功能（Visual 模式），�
 ```
 :set mouse-=a
 ```
-
-## 硬件配置
-
-### Windows
-
-Tower PC - Tinari
-
-- Intel i5 12400
-  - [CPU 性能跑分](https://browser.geekbench.com/v5/cpu/17521279)
-  - [集显性能跑分](https://browser.geekbench.com/v5/compute/5556253)
-- 32G RAM
-- 1T SSD
-- RX6750 XT
-  - [GPU 性能跑分](https://browser.geekbench.com/v5/compute/5596836)
-
-
-Tower PC (Office)
-
-- Intel i5 9400
-- 16G RAM
-- 256G SSD + 1T HDD
-- Intel HD Graphics
-
-### MacOS
-
-MacBook Pro 2020 - Nahida
-
-- Intel i7 1068NG7
-- 16G RAM
-- 512G SSD
-- Intel HD Graphics
-
-Mac Mini 2020 - Sayu (Office)
-
-- Apple M1
-  - [性能跑分](https://browser.geekbench.com/v5/cpu/18628524)
-  - [集显性能跑分](https://browser.geekbench.com/v5/compute/5884837)
-- 8G RAM
-- 256G SSD
