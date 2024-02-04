@@ -28,6 +28,7 @@ export default defineConfig({
         items: [
           { text: "系统环境", link: "/env", activeMatch: "^/env" },
           { text: "Git 管理", link: "/git", activeMatch: "^/git" },
+          { text: "开源库推荐", link: "/dep", activeMatch: "^/dep" },
           { text: "项目目录结构", link: "/dir", activeMatch: "^/dir" }
         ]
       },
@@ -42,7 +43,7 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/Dreamer-Paul/Code-Style" }
     ],
     footer: {
-      copyright: "© 2023 Dreamer-Paul"
+      copyright: "© 2024 Dreamer-Paul"
     },
   }
 })
