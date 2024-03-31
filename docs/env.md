@@ -8,20 +8,24 @@ outline: deep
 
 ### 软件
 
-- [Google Chrome](https://www.google.com/chrome)：前端开发调试必备的浏览器
+- [Google Chrome](https://www.google.com/chrome)：🪟🍎🐧 前端开发调试必备的浏览器
   - 插件参考：[我的开发工具集](https://paugram.com/coding/my-frontend-dev-tools.html)
-- [Firefox](https://www.mozilla.org/zh-CN/firefox/products)：浏览器的替代选择，顺带检测下代码的兼容性
-- [Visual Studio Code](https://code.visualstudio.com)：前端主力编辑器
+- [Firefox](https://www.mozilla.org/zh-CN/firefox/products)：🪟🍎🐧 浏览器的替代选择，顺带检测下代码的兼容性
+- [Visual Studio Code](https://code.visualstudio.com)：🪟🍎🐧 前端主力编辑器
   - 插件参考：[我的开发工具集](https://paugram.com/coding/my-frontend-dev-tools.html)
-- [FileZilla](https://filezilla-project.org)：FTP 文件传输
-- [Postman](https://www.postman.com/downloads)：API 文档和测试工具
+- [GitHub Desktop](https://desktop.github.com)：🪟🍎 没法用 SSH 拉代码就用它了
+  - 目前官方版本只支持 Windows 和 MacOS
+- [SourceTree](https://www.atlassian.com/software/sourcetree)：🪟🍎 免费的 Git 可视化软件
+  - 个人认为 MacOS 版本比 Windows 版本更好用一些
+- [FileZilla](https://filezilla-project.org)：🪟🍎🐧 FTP 文件传输
+- [Postman](https://www.postman.com/downloads)：🪟🍎🐧 API 文档和测试工具
   - 别问我为什么不是国产某某某，因为它的知名度还是最高的
-- [FontForge](https://fontforge.org)：开源免费的跨平台字体生成工具，可用于网页字体等
-- [WPS Office](https://www.wps.cn)：国产办公软件
+- [FontForge](https://fontforge.org)：🪟🍎🐧 开源免费的跨平台字体生成工具，可用于网页字体等
+- [WPS Office](https://www.wps.cn)：🪟🍎🐧 国产办公软件
   - 除了 Windows 版都是比较良心的无广告软件，相较于 Office 全家桶它的占用还是比较小的
-- [KDE Connect](https://kdeconnect.kde.org)：跨平台连接工具，可传输文件、剪贴板、远程操控等功能
-- [OBS](https://obsproject.com)：跨平台且免费的直播软件，不多说
-- [Affinity Photo](https://affinity.serif.com)：跨平台的照片编辑软件，可购永久授权
+- [KDE Connect](https://kdeconnect.kde.org)：🪟🍎🐧 跨平台连接工具，可传输文件、剪贴板、远程操控等功能
+- [OBS](https://obsproject.com)：🪟🍎🐧 跨平台且免费的直播软件，不多说
+- [Affinity Photo](https://affinity.serif.com)：🪟🍎 跨平台的照片编辑软件，可购永久授权
 
 ### 命令行软件
 
@@ -41,7 +45,6 @@ outline: deep
 
 ### 软件
 
-- [SourceTree](https://www.atlassian.com/software/sourcetree)
 - [TortoiseGit](https://tortoisegit.org)
 - [TortoiseSVN](https://tortoisesvn.net)
 - Clash For Windows
@@ -78,7 +81,6 @@ outline: deep
 ### 软件
 
 - [CotEditor](https://github.com/coteditor/CotEditor)：Mac 独占的一次性编辑器
-- [SourceTree](https://www.atlassian.com/software/sourcetree)：免费的 Git 可视化管理工具
 - V2RayU：懂得都懂
 - ClashX Pro：懂得都懂
 - [DevToys](https://github.com/ObuchiYuki/DevToysMac)：DevToys 的 Mac 版本
