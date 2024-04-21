@@ -26,6 +26,12 @@ outline: deep
 - [KDE Connect](https://kdeconnect.kde.org)：🪟🍎🐧 跨平台连接工具，可传输文件、剪贴板、远程操控等功能
 - [OBS](https://obsproject.com)：🪟🍎🐧 跨平台且免费的直播软件，不多说
 - [Affinity Photo](https://affinity.serif.com)：🪟🍎 跨平台的照片编辑软件，可购永久授权
+- [Docker Desktop](https://www.docker.com/products/docker-desktop)：🪟🍎🐧 Docker 就不多介绍了吧，终于有 Linux 版了
+- [BalenaEtcher](https://etcher.balena.io)：🪟🍎🐧 开源且跨平台的优盘系统盘写入程序
+- [Moonlight QT](https://github.com/moonlight-stream/moonlight-qt)：🪟🍎🐧 开源的游戏流式传输客户端
+  - 一般配合 Sunshine 服务端使用
+  - 除此之外它还支持 iOS 和安卓版本，详见该组织下的其他仓库
+- [Sunshine](https://github.com/LizardByte/Sunshine)：🪟🐧 为 MoonLight 设计的自主托管游戏流式传输服务端
 
 ### 命令行软件
 
@@ -53,7 +59,9 @@ outline: deep
 - [PowerToys](https://github.com/microsoft/PowerToys)：如其名曰，是一款系统辅助工具
   - 内置颜色选择、窗口布局、文件管理器功能拓展等
 - [WinSCP](https://winscp.net)：图形化 SCP 工具，比 SFTP 协议的要好用一些？
-- [XShell](https://www.xshell.com/zh/xshell)：一款老牌的 SSH 工具，个人授权免费
+- [PowerToys](https://github.com/microsoft/PowerToys)：系统辅助工具，内置颜色选择、窗口布局、文件管理器功能拓展等
+- [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/download.html)：磁盘占用可视化工具，方便手动清理释放磁盘空间
+- [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo)：硬盘状态检测工具，有二次元的版本，宅男最喜欢了
 
 ### 命令行软件
 
@@ -61,11 +69,12 @@ outline: deep
 
 ### 终端
 
-- [PowerShell 7](https://github.com/PowerShell/PowerShell)（内置的太老了，赶紧换掉它）
+- [XShell](https://www.xshell.com/zh/xshell)：一款老牌的 Shell 工具，个人授权免费
+- [PowerShell 7](https://github.com/PowerShell/PowerShell)：系统内置的版本太老了，赶紧换掉它
 
 ### 虚拟机
 
-- [VMware WorkStation Pro](https://www.vmware.com/products/workstation-pro.html)（话不多说）
+- [VMware WorkStation Pro](https://www.vmware.com/products/workstation-pro.html)：虚拟机软件，话不多说
 
 ## MacOS
 
