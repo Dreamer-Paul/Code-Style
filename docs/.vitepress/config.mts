@@ -43,7 +43,7 @@ export default defineConfig({
       { icon: "github", link: "https://github.com/Dreamer-Paul/Code-Style" }
     ],
     footer: {
-      copyright: "© 2024 Dreamer-Paul"
+      copyright: "© 2025 Dreamer-Paul"
     },
   }
 })

@@ -32,6 +32,7 @@ outline: deep
   - 一般配合 Sunshine 服务端使用
   - 除此之外它还支持 iOS 和安卓版本，详见该组织下的其他仓库
 - [Sunshine](https://github.com/LizardByte/Sunshine)：🪟🐧 为 MoonLight 设计的自主托管游戏流式传输服务端
+- [ToDesk](https://www.todesk.com)：🪟🍎🐧 国产免费远程软件
 
 ### 命令行软件
 
@@ -62,6 +63,7 @@ outline: deep
 - [PowerToys](https://github.com/microsoft/PowerToys)：系统辅助工具，内置颜色选择、窗口布局、文件管理器功能拓展等
 - [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/download.html)：磁盘占用可视化工具，方便手动清理释放磁盘空间
 - [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo)：硬盘状态检测工具，有二次元的版本，宅男最喜欢了
+- [PotPlayer](https://potplayer.daum.net)：系统内置播放器的替代选择，兼容性挺不错的
 
 ### 命令行软件
 
@@ -103,6 +105,9 @@ outline: deep
   - [ShiftIt](https://github.com/peterklijn/hammerspoon-shiftit)：没错，就是这个插件，体验毫不逊色于付费软件
 - [Android File Transfer](https://www.android.com/filetransfer)：在 Mac 上管理安卓手机文件
 - [Macs Fan Control](https://crystalidea.com/macs-fan-control)：风扇转速控制软件，免费版够用
+- [PlayCover](https://playcover.io)：在 M 芯片 Mac 上游玩 iPhone 和 iPad 游戏
+  - 需要砸壳版的应用，也是能在越狱设备上安装的应用
+
 
 ### 终端
 
