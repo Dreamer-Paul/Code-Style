@@ -4,6 +4,8 @@ outline: deep
 
 # 系统环境
 
+本文档将记录笔主日常工作和生活常用的商用/开源软件，就当重装系统的备忘录了，仅供参考。
+
 ## 跨平台
 
 ### 软件
@@ -13,13 +15,18 @@ outline: deep
 - [Firefox](https://www.mozilla.org/zh-CN/firefox/products)：🪟🍎🐧 浏览器的替代选择，顺带检测下代码的兼容性
 - [Visual Studio Code](https://code.visualstudio.com)：🪟🍎🐧 前端主力编辑器
   - 插件参考：[我的开发工具集](https://paugram.com/coding/my-frontend-dev-tools.html)
+  - 开源替代：[VSCodium](https://vscodium.com)
+- [Cursor](https://cursor.com)：🪟🍎🐧 知名 AI 编辑器
+  - 不用 Claude Code 或者 Codex，购买即用还是很方便的
 - [GitHub Desktop](https://desktop.github.com)：🪟🍎 没法用 SSH 拉代码就用它了
   - 目前官方版本只支持 Windows 和 MacOS
+  - 本质上是 Electron，目前用 CLI 操作直接拉省掉它了
 - [SourceTree](https://www.atlassian.com/software/sourcetree)：🪟🍎 免费的 Git 可视化软件
   - 个人认为 MacOS 版本比 Windows 版本更好用一些
 - [FileZilla](https://filezilla-project.org)：🪟🍎🐧 FTP 文件传输
 - [Postman](https://www.postman.com/downloads)：🪟🍎🐧 API 文档和测试工具
   - 别问我为什么不是国产某某某，因为它的知名度还是最高的
+  - 开源替代：[Hoppscotch](https://hoppscotch.io)
 - [FontForge](https://fontforge.org)：🪟🍎🐧 开源免费的跨平台字体生成工具，可用于网页字体等
 - [WPS Office](https://www.wps.cn)：🪟🍎🐧 国产办公软件
   - 除了 Windows 版都是比较良心的无广告软件，相较于 Office 全家桶它的占用还是比较小的
@@ -33,9 +40,16 @@ outline: deep
   - 除此之外它还支持 iOS 和安卓版本，详见该组织下的其他仓库
 - [Sunshine](https://github.com/LizardByte/Sunshine)：🪟🐧 为 MoonLight 设计的自主托管游戏流式传输服务端
 - [ToDesk](https://www.todesk.com)：🪟🍎🐧 国产免费远程软件
+- [Astral](https://astral.fan)：🪟🐧🤖 游戏联机工具，本质上是一种虚拟隧道
+- [HeidiSQL](https://www.heidisql.com)：🪟🍎🐧 数据库管理工具
+  - 支持 MySQL、MariaDB、SQL Server、PostgreSQL、SQLite 等
+- [Cherry Studio](https://cherryai.com)：🪟🍎🐧 跨平台的 AI 对话客户端
+- [Ollama](https://ollama.com)：🪟🍎🐧 本地运行 AI 大模型
 
 ### 命令行软件
 
+- [FNM](https://fnm.vercel.app)：Node 包管理器
+  - 比 NVM 快很多，完美替代品，Windows 下也没有奇怪的问题
 - [Cloc](https://github.com/AlDanial/cloc)：统计代码行数
   - @Innei 提供的快速使用命令：`cloc . --exclude-dir=node_modules,.nuxt,.next,build,.vscode,dist,release,tmp --exclude-lang=JSON,SVG,XML`
 - [FFmpeg](https://github.com/FFmpeg/FFmpeg)：几乎万能的开源媒体格式转换工具
@@ -46,12 +60,13 @@ outline: deep
 
 ### 运行环境
 
-- [NVM Windows](https://github.com/coreybutler/nvm-windows) + NodeJS 套装
 - [Xampp](https://www.apachefriends.org/download.html)：PHP 集成环境
   - Apache + MariaDB + PHP + Perl
 
 ### 软件
 
+- Adobe 全家桶，目前主要是 PS、LR、AI、AU
+  - [传送门](http://vposy.top)，虽然不保正不确定是不是 Vposy 本人
 - [TortoiseGit](https://tortoisegit.org)
 - [TortoiseSVN](https://tortoisesvn.net)
 - Clash For Windows
@@ -64,6 +79,9 @@ outline: deep
 - [SpaceSniffer](http://www.uderzo.it/main_products/space_sniffer/download.html)：磁盘占用可视化工具，方便手动清理释放磁盘空间
 - [CrystalDiskInfo](https://crystalmark.info/en/software/crystaldiskinfo)：硬盘状态检测工具，有二次元的版本，宅男最喜欢了
 - [PotPlayer](https://potplayer.daum.net)：系统内置播放器的替代选择，兼容性挺不错的
+- [WinMerge](https://winmerge.org)：开源的文件夹差异检测软件
+- [CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)：CPU 和硬件检测
+- [Putty](https://putty.org)：一款终端软件，主要是生成密钥给其他软件用
 
 ### 命令行软件
 
@@ -86,14 +104,13 @@ outline: deep
 
 ### 运行环境
 
-- NVM + NodeJS 套装
+- FNM + NodeJS 套装
   - 这里建议直接使用 HomeBrew 安装
 
 ### 软件
 
 - [CotEditor](https://github.com/coteditor/CotEditor)：Mac 独占的一次性编辑器
-- V2RayU：懂得都懂
-- ClashX Pro：懂得都懂
+- Clash Verge：懂得都懂
 - [DevToys](https://github.com/ObuchiYuki/DevToysMac)：DevToys 的 Mac 版本
 - [IINA](https://iina.io)：Mac 独占的播放器，媲美 QuickTime 的界面，更强的解码
 - [Microsoft Remove Desktop Beta](https://aka.ms/rdmacbeta)：Windows 远程桌面工具（可惜 Linux 没有）
